@@ -4,12 +4,9 @@
 My plan is to train a Jumping Sumo minidrone from Parrot to navigate a track using reinforcement learning. This project will be divided into several stages:
 
 - [x] Implement the ARSDK3 protocol in python to allow me control the drone directly via a PC and stream video as well
-- [ ] Implement Deep Deterministic Policy Gradient (DDPG) in CNTK (maybe Tensorflow?)
-- [ ] Use DDPG to train the drone to navigate a paper track
-  - The higher the speed of the robot, the greater the reward
-  - Negative rewards for leaving the track. I plan to train a convolutional network to decide whether or not the robot is within the track
-  - At each time step, the state will be the last frame (or stack of frames) as well as last read speed from the robot
-  - The agents actions will be speed [-100, 100] and turn [-100, 100]
+- [X] Implement FAST RCNN Object Detection with Tensorflow-NEW
+- [X] Add Jump and load command -NEW
+- [X] Add auto-driving feature with object detection
 
 
 ## Requirements
@@ -18,6 +15,7 @@ More requirements will be added as the project progresses.
 ### Software
 - Python 3
 - OpenCV
+- Tensorflow
 
 ### Hardware
 - One Jumping Sumo (I am using a Jumping Race Max, other Jumping Drones should also work)
